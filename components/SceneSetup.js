@@ -83,7 +83,7 @@ export default function SceneSetup({ children }) {
       <ambientLight intensity={0.5} />
       <directionalLight 
         castShadow 
-        position={[5, 10, 5]} 
+        position={[0.88, 3, -1.66]} 
         intensity={1.2}
         shadow-mapSize={[optimizationSettings.shadowMapSize, optimizationSettings.shadowMapSize]}
         shadow-bias={optimizationSettings.shadowBias}
@@ -97,7 +97,7 @@ export default function SceneSetup({ children }) {
       {/* 카메라 설정 */}
       <PerspectiveCamera
         makeDefault
-        position={[0, 0.5, 3]}
+        position={[2, 2, 1.8]}
         fov={isMobile ? 60 : 50}
         near={0.1}
         far={1000}
@@ -112,13 +112,13 @@ export default function SceneSetup({ children }) {
           rotateSpeed={isMobile ? 0.6 : 0.8}
           panSpeed={0.8}
           minDistance={0.9}
-          maxDistance={1.5}
+          maxDistance={100}
           minPolarAngle={0}
           maxPolarAngle={Math.PI}
-          minAzimuthAngle={Math.PI / 4.5}
-          maxAzimuthAngle={Math.PI / 2}
+          minAzimuthAngle={Math.PI / 0.2}
+          maxAzimuthAngle={Math.PI / 3}
           enablePan={!isMobile}
-          zoomSpeed={0.7}
+          zoomSpeed={0}
           zoomToCursor={true}
         />
       </CameraPositionLimit>

@@ -24,5 +24,13 @@ export const StyledCanvas = styled(Canvas)`
   width: 100% !important;
   height: 100% !important;
   display: block !important;
-  touch-action: none;
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+  }
 `; 

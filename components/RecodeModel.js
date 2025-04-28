@@ -129,6 +129,6 @@ export default function RecodeModel({ currentLayer, ...props }) {
   }, [layerNumber, modelReady, actions, names]);
   
   return (
-    <group ref={group} position={[0, 0, 0]} scale={[2, 2, 2]} rotation={[0, 0, 0]} {...props} />
+    <group ref={group} position={[0, 0, 0]} scale={5} rotation={[0, 0, 0]} {...props} />
   );
 } 

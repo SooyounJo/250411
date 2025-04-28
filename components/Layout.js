@@ -106,7 +106,7 @@ const Layout = ({ children, title = 'Minimal Product Portfolio' }) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content="Minimalism Product Design Portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Page className={`${geistSans.variable} ${geistMono.variable}`}>

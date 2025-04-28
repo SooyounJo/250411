@@ -37,7 +37,7 @@ const StyledLoader = styled(Loader)`
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentLayer, setCurrentLayer] = useState('layer1');
-  const [showCoordinates, setShowCoordinates] = useState(false);
+  const [showCoordinates, setShowCoordinates] = useState(true);
   
   // 로딩 종료 처리
   useEffect(() => {
@@ -92,7 +92,7 @@ export default function Home() {
             </Html>
           }>
             <RecodeModel currentLayer={currentLayer} />
-            {showCoordinates && <CoordinateTracker />}
+            <CoordinateTracker />
           </Suspense>
         </SceneSetup>
       </Canvas>
